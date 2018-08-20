@@ -10,7 +10,7 @@ var usersRouter = require('./routes/users');
 var app = express();
 
 var mongoose = require('mongoose');
-var mongoDB = process.env.MONGODB_URI || 'mongodb://127.0.0.1/local_library';
+var mongoDB = process.env.MONGODB_URI || 'mongodb://admin:admin123@ds225492.mlab.com:25492/local_library_hieu_luu';
 mongoose.connect(mongoDB,{ useNewUrlParser: true });
 mongoose.Promise = global.Promise;
 var db = mongoose.connection;
